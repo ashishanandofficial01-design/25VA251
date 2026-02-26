@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Values Types In JS</title>
+</head>
+<body>
+    <script>
+        //JS data values in JS
+        //Primitive-single value variables which are immutable
+        // string,number,boolean,undefined,null,BigInt,symbol
+
+        //string
+        var myName="ASHISH";
+        console.log(myName);
+        console.log(typeof(myName));
+
+        //number
+        var mymobile="9999999999";
+        console.log(myName + " mobile number is " + mymobile);
+
+        //boolean
+        var isMarried=false;
+        console.log(myName + " is married ? " + isMarried);
+
+        //undefined
+        var myEmail;
+        console.log(myEmail);
+        console.log(typeof(myEmail));
+
+        //null
+        var myAddress=null;
+        console.log(myAddress);
+        console.log(typeof(myAddress));
+
+        ///Bigint
+        var myValue=BigInt(123456789999990123456789023456789234567893456789);
+        console.log(myValue);
+        console.log(typeof(myValue));
+
+        //symbol
+        var name1=Symbol("ASHISH");
+        var name2=Symbol("ASHISH");
+        console.log(name1==name2);
+
+        //Reference(Object) typed==mutable in memory and keeps value in pair
+        //object,function,array
+
+        //object are defined in pair of key and its value
+
+        let myInfo={
+            name:"Megha", 
+            age:23, 
+            isMarried:false, 
+            mymobile:123456789, 
+            add:null, 
+            branch:"CSE",
+            section:23
+        };
+
+        console.log(myInfo);
+        console.log(myInfo.name); //access object's key i.e name
+
+        //object lenghth
+        let keys=Object.keys(myInfo);
+        console.log("myInfo object has " + keys.length);
+
+        //function- the reusable block of code that performs a specific task
+
+        function cal(){
+            var number1=45;
+            var number2=40;
+            var res=number1+number2;
+            console.log(" Addition of two numbers is  " + res);
+            console.log(typeof(cal));
+        }
+        cal();
+
+        //array-collection of any data types in JS
+
+        //for similar data types
+        let studentsList=["VIKAS","ABHAY","NITU","VINAY","RAHUL"];
+        console.log(studentsList[1]);
+
+        //for any data types
+        let vikasinfo=["VIKAS SINGH",23, false , null , "CSE", 18];
+        console.log(vikasinfo[1]);
+        console.log(typeof(vikasinfo));
+
+        // to iterate array member
+        for(let i=0; i<vikasinfo.length; i++){
+            console.log(vikasinfo[i]);
+        }
+
+
+
+    </script>
+    
+</body>
+</html>
