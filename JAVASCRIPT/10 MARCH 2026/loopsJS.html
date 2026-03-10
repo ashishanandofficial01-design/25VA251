@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in JS</title>
+</head>
+<script>
+    //Loops in JavaScript are used to perform repetitive tasks, executing a block of code multiple times until a specified condition is met
+
+
+    let students=["Rohit","Rahul","Ramesh","Suresh","Mahesh"];
+     //for loop..............
+    for(let i=0; i<students.length; i++){
+        console.log(students[i]);
+    }
+
+    // while loop............
+    let i=0;
+    while(i<students.length){
+        console.log(students[i]);
+        i++;
+    }
+
+    //for of loop: introduced in ES6, used to iterate over iterable objects like arrays, strings, etc.
+     for(let x of students){
+        console.log(x);
+     }
+
+        //for in loop: used to iterate over the properties of an object
+        let student={
+            name:"Rohit",
+            age:22,
+            isMarried:false
+        };
+        for(let x in student){
+            console.log(student[x]);
+        }
+
+</script>
+<body>
+</body>
+</html>
