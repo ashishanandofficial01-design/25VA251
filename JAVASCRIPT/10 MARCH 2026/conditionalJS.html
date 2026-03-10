@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditinal Statements in JS</title>
+</head>
+<body>
+  <script>
+    //Conditional statements in JavaScript are used to perform different actions based on different conditions. They allow you to control the flow of your program by executing certain blocks of code only when specific conditions are met
+
+
+    //if statement: used to execute a block of code if a specified condition is true
+    let age=18;
+    if(age<18){
+        console.log("Not eligible to vote.");
+    }
+    console.log("Eligible to vote.");
+
+    //if...else statement: used to execute one block of code if a specified condition is true, and another block of code if the condition is false
+    let myAge=21;
+    if(myAge>=18){
+        console.log("Eligible to vote.");
+    }
+    else{
+        console.log("Not eligible to vote.");
+    }
+
+    //switch statement: used to perform different actions based on different conditions. It is an alternative to using multiple if...else statements when you have many conditions to check
+    let grade='C';
+    switch(grade){
+        case 'A':result="First Division";
+            break;
+        case 'B':result="Second Division";
+            break;
+        case 'C':result="Third Division";
+            break;
+        default:result="Fail";
+    }
+    console.log(result);
+
+//else if statement: used to specify a new condition to test, if the first condition is false
+let marks=32;
+if(marks<=33){
+    console.log("Grade C");
+}
+else if(marks>=33 && marks<60){
+    console.log("Grade B");
+}
+else{
+    console.log("Grade A");
+}
+
+  </script>  
+</body>
+</html>
